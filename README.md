@@ -8,8 +8,8 @@ handle cases where strict encoding practices are not followed.
 
 A single integer representing the version:
 
-**Version 0:** 10000 (`10 27 00 00`)
-**Version 1:** 10001 (`11 27 00 00`)
+- **Version 0:** 10000 (`10 27 00 00`)
+- **Version 1:** 10001 (`11 27 00 00`)
 
 ## Header (version 0+)
 
