@@ -44,11 +44,11 @@ The X coordinate ranges from 0 to Columns-1 and the Y coordinate ranges from 0 t
 
 ## Glyph
 
-Byte **X+\(Columns\*Y\)**. An index into IBM PC Code Page 437. The rendering of glyphs is implementation-defined.
+Byte **X\*Rows+Y**. An index into IBM PC Code Page 437. The rendering of glyphs is implementation-defined.
 
 ## Attributes
 
-Byte **Columns\*Rows+X+\(Columns\*Y\)**.
+Byte **\(Columns+X\)\*Rows+Y**.
 
 - Bits 0-2: color **Foreground**
 - Bits 3-5: color **Background**
