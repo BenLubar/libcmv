@@ -34,7 +34,9 @@ Repeated until the end of the file:
 - int **Size** *The size of this chunk.*
 - **Data\[Size\]** *The zlib-compressed data.*
 
-Each chunk contains up to 200 frames in the CMV codec. Chunks must have at least one frame and must not contain partial frames. (Strict: all chunks except the final chunk must contain exactly 200 frames)
+Each chunk contains up to 800000 bytes of frame data in the CMV codec. Chunks must have at least one frame and must not contain partial frames. (Strict: all chunks except the final chunk must contain exactly the same number of frames)
+
+The compressed size must be less than or equal to 1000000 bytes.
 
 # CMV codec
 
